@@ -40,3 +40,11 @@ MonoBehaviour:
   - Damage
   - AminaGain
   - DamagedToSelf
+  - UpdateUI
+  - NewPickUp
+  - UpdateUINPC
+  - ActiveAbility
+  - AminaToOvercharge
+  - OverchargeToAnima
+  - ShowMenu
+  - ClickOff

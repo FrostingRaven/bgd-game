@@ -9,6 +9,7 @@ TagManager:
   - Prop
   - NPC
   - PickUp
+  - AbilityPickUp
   layers:
   - Default
   - TransparentFX
