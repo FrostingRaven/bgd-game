@@ -1,0 +1,33 @@
+{
+    "name": "CamLook",
+    "maps": [
+        {
+            "name": "Mouse",
+            "id": "9b4028f1-5190-4431-8ba1-b53bba8b3f6b",
+            "actions": [
+                {
+                    "name": "MouseLook",
+                    "type": "PassThrough",
+                    "id": "f7f05cc4-7a4d-43ab-aa96-8ad48ead11d6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ce96929b-f877-4045-9902-a3b3f341aaa8",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
