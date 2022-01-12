@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1280227732115873059}
   - component: {fileID: 1280227732115873058}
-  - component: {fileID: 4800215053140758633}
+  - component: {fileID: 9034422856335759401}
   m_Layer: 0
   m_Name: ConvertOvercharge
   m_TagString: Untagged
@@ -102,7 +102,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Player
+          value: Pleyah
         - useVariable: 0
           name: 
           tooltip: 
@@ -445,7 +445,7 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
---- !u!212 &4800215053140758633
+--- !u!212 &9034422856335759401
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
