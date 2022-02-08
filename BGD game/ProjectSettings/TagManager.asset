@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - NPC
+  - Body
+  - Head
+  - PickUp
+  - AbilityPickUp
+  - Weapon
+  - Ranged
   layers:
   - Default
   - TransparentFX
@@ -17,7 +24,7 @@ TagManager:
   - Lighting
   - Ground
   - Postprocessing
-  - 
+  - Walkable
   - 
   - 
   - 

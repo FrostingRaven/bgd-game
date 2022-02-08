@@ -220,8 +220,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 322
-        y: 100
+        x: 186
+        y: 101.97656
         width: 100
         height: 32
       isBreakpoint: 0
@@ -440,8 +440,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 229.53125
-        y: 170.4375
+        x: 181.53125
+        y: 186.4375
         width: 100
         height: 32
       isBreakpoint: 0
@@ -721,8 +721,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 491.65625
-        y: 176.07031
+        x: 413.16406
+        y: 195.05469
         width: 100
         height: 48
       isBreakpoint: 0
@@ -921,8 +921,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 343.75
-        y: 243.13281
+        x: 240.75
+        y: 247.13281
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1015,8 +1015,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 622
-        y: 173
+        x: 574
+        y: 189
         width: 100
         height: 48
       isBreakpoint: 0
@@ -1055,7 +1055,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101
-        actionIsOpen: 0000000000
+        actionIsOpen: 0000010000
         actionStartIndex: 000000001100000022000000260000002b000000
         actionHashCodes: 7e8b0004d3bd7b059cdc3905156562055ac85204
         unityObjectParams: []
@@ -1243,7 +1243,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: UnityEngine.AudioClip
-          value: {fileID: 8300000, guid: cf749067f285fc6449fb10dd3ec7eac3, type: 3}
+          value: {fileID: 8300000, guid: 22b6ae1c5b6a49b4c9c16f3f04cf77f0, type: 3}
         fsmVarParams: []
         fsmArrayParams:
         - useVariable: 1
@@ -1496,8 +1496,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 768
-        y: 181
+        x: 720
+        y: 197
         width: 100
         height: 64
       isBreakpoint: 0
@@ -1634,8 +1634,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 590.5781
-        y: 289
+        x: 542.5781
+        y: 305
         width: 112
         height: 32
       isBreakpoint: 0
@@ -1790,8 +1790,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 461.5
-        y: 348.95312
+        x: 413.5
+        y: 364.95312
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1905,8 +1905,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 670.33594
-        y: 360
+        x: 622.33594
+        y: 376
         width: 137
         height: 32
       isBreakpoint: 0
@@ -2061,8 +2061,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 461.5
-        y: 408.64062
+        x: 413.5
+        y: 424.64062
         width: 126
         height: 32
       isBreakpoint: 0
@@ -2176,8 +2176,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 440
-        y: 91.984375
+        x: 392
+        y: 107.984375
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2300,8 +2300,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 297.16406
-        y: 307.79688
+        x: 300.5625
+        y: 329.8828
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2373,8 +2373,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 752.5
-        y: 66.953125
+        x: 704.5
+        y: 82.953125
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2592,8 +2592,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 166
-        y: 314.03906
+        x: 118
+        y: 330.03906
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2789,8 +2789,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 57
-        y: 261
+        x: 54.101562
+        y: 257.46875
         width: 100
         height: 32
       isBreakpoint: 0

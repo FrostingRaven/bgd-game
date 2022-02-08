@@ -1,0 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AIStateMachine 
+{
+    public AIState[] states;
+    public Agent agent;
+    public AiStateId currentState;
+
+    public AIStateMachine(Agent agets)
+    {
+        this.agent=agets;
+        int numStates = System.Enum.GetNames(typeof(AiStateId)).Length;
+        states = new AIState[numStates];
+    }
+
+    public void RegisterState(AIState state){
+        int index = (int)state.GetId();
+        states[index]=state;
+    }
+
+    public AIState GetState(AiStateId stateId){
+        int index = (int)stateId;
+        return states[index];
+    }
+
+    public void Update(){
+        GetState(currentState)?.Update(agent);
+    }
+
+    public void ChangeState(AiStateId newState){
+        GetState(currentState)?.Exit(agent);
+        currentState=newState;
+        GetState(currentState)?.Enter(agent);
+    }
+}
