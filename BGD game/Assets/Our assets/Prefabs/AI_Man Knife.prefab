@@ -482,7 +482,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 8378279020632035296}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -708,7 +708,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 8378279020632035296}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -1371,7 +1371,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 39.930927, y: 0.00007009506, z: -0.000058174133}
+  m_ConnectedAnchor: {x: 39.930923, y: 0.00007009506, z: 0.000037670135}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1481,7 +1481,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.1157646, y: -2.69213, z: -9.896851}
+  m_ConnectedAnchor: {x: 4.115779, y: -2.692036, z: -9.896851}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -2446,7 +2446,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 213.9375
-        y: 103.39844
+        y: 119.39844
         width: 125
         height: 32
       isBreakpoint: 0
@@ -2534,26 +2534,39 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 423
-        y: 87
+        y: 103
         width: 100
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Death for real
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.AddScript
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.EnableFSM
+        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000500000008000000
-        actionHashCodes: b2cf1000e9f733045ac85204
+        - 
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000005000000080000000a0000000e000000
+        actionHashCodes: b2cf1000e9f733045ac8520487aa970048c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2573,6 +2586,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 7322897542313396848}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2718,11 +2739,23 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: RagdollDis
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Damage
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -2743,18 +2776,31 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 000000
+        stringParams:
+        - FINISHED
+        byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000012000000110000002400000001000000
+        paramDataType: 14000000110000001100000001000000010000001400000012000000110000002400000001000000140000001200000011000000110000000f0000001700000001000000
         paramName:
         - gameObject
         - activate
@@ -2766,15 +2812,22 @@ MonoBehaviour:
         - removeOnExit
         - targetProperty
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000010000000100000000000000020000000000000002000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000000000001000000
+        - gameObject
+        - fsmName
+        - enable
+        - resetOnExit
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000010000000000000001000000010000000000000002000000000000000200000002000000010000000300000004000000000000000000000003000000
+        paramByteDataSize: 0000000000000000000000000100000001000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: Damaged
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 310.28906
-        y: 282.01562
+        y: 298.01562
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2934,7 +2987,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 378
-        y: 145
+        y: 161
         width: 100
         height: 48
       isBreakpoint: 0
@@ -3034,7 +3087,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 185.21094
-        y: 196.64062
+        y: 212.64062
         width: 126
         height: 48
       isBreakpoint: 0
@@ -3178,7 +3231,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 51
-        y: 303
+        y: 319
         width: 108
         height: 32
       isBreakpoint: 0
@@ -3260,6 +3313,74 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000000000000010000000000000001000000
         paramByteDataSize: 0000000000000000000000000100000001000000
+    - name: Death for real
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 380.40625
+        y: 52.039062
+        width: 110
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.DeactivateSelf
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 03da1f00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f00000011000000
+        paramName:
+        - delay
+        - realTime
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
     events:
     - name: next
       isSystemEvent: 0
@@ -4185,7 +4306,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -28.183737, y: 3.6006165, z: 0}
+  m_ConnectedAnchor: {x: -28.183752, y: 3.600521, z: 0}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -4419,7 +4540,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 33.94744, y: 0.14473253, z: 0.14358306}
+  m_ConnectedAnchor: {x: 33.947823, y: 0.14470106, z: 0.14357603}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
@@ -4560,7 +4681,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -23.371832, y: -0.78560925, z: 19.099045}
+  m_ConnectedAnchor: {x: -23.371851, y: -0.7857008, z: 19.098663}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -4894,7 +5015,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -39.930923, y: -0.00006484985, z: 0.00006198883}
+  m_ConnectedAnchor: {x: -39.93092, y: -0.000064373016, z: -0.00003385544}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
@@ -5066,7 +5187,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -33.94743, y: -0.14489949, z: -0.14357579}
+  m_ConnectedAnchor: {x: -33.947052, y: -0.14493102, z: -0.14358377}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -5383,7 +5504,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.1157722, y: -2.6921313, z: 9.896851}
+  m_ConnectedAnchor: {x: 4.1157866, y: -2.692037, z: 9.896851}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -6995,7 +7116,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -23.37155, y: -0.78565025, z: -19.099045}
+  m_ConnectedAnchor: {x: -23.371563, y: -0.78574085, z: -19.098663}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -7105,7 +7226,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -40.415405, y: 6.1366715, z: 1.933536e-13}
+  m_ConnectedAnchor: {x: -40.41542, y: 6.1365767, z: 1.9335363e-13}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
