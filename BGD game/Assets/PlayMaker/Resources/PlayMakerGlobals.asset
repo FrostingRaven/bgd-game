@@ -49,3 +49,4 @@ MonoBehaviour:
   - ShowMenu
   - ClickOff
   - Pick-Up
+  - NewWeaponPickUp
