@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3375dd6ef0f71e4f8c1910ea7114d16, type: 3}
+  m_Name: Japan_20220208124329_Profile
+  m_EditorClassIdentifier: 
+  MapTexture: {fileID: 21300000, guid: b29d2d101608a7e4c9cb7fc8b7051359, type: 3}
+  MapTextureSize: {x: 2048, y: 1370}
+  MapBackground: {r: 0, g: 0, b: 0, a: 1}
+  MapBounds:
+    m_Center: {x: -72.23218, y: 0, z: -1.0986786}
+    m_Extent: {x: 207.44281, y: 50, z: 138.80229}
+  CustomLayers: []
